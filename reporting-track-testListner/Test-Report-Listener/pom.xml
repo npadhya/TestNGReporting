@@ -1,0 +1,267 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	
+	<groupId>com.qe.test.automation</groupId>
+    <artifactId>Test-Report-Listener</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+	<name>Next generation reporting</name>
+	<description>Next generation reporting tool for MAUI framework</description>
+
+	<parent>
+		<groupId>com.ebay.qe.checkout</groupId>
+		<artifactId>superpom</artifactId>
+		<relativePath>../buildconfig/superpom</relativePath>
+		<version>0.0.2-SNAPSHOT</version>
+	</parent>
+
+	<repositories>
+		<repository>
+			<id>codehaus</id>
+			<url>http://repository.codehaus.org/org/codehaus</url>
+		</repository>
+		<repository>
+			<id>checkoutqe.releases</id>
+			<!-- Even though we deploy artifacts to nxrepository, for dependency resolution 
+				in QA, we still use the following as suggested by repository team -->
+			<url>http://repository.qa.ebay.com/checkoutqe/releases</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>checkoutqe.snapshots</id>
+			<!-- Even though we deploy artifacts to nxrepository, for dependency resolution 
+				in QA, we still use the following as suggested by repository team -->
+			<url>http://repository.qa.ebay.com/checkoutqe/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>checkoutqe.releases</id>
+			<name>checkoutqe releases repo</name>
+			<url>dav:http://nxrepository.corp.ebay.com/nexus/content/repositories/ebay.checkoutqe.releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>checkoutqe.snapshots</id>
+			<name>checkoutqe snapshots repo</name>
+			<url>dav:http://nxrepository.corp.ebay.com/nexus/content/repositories/ebay.checkoutqe.snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng-ebay</artifactId>
+			<version>1.1.4</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>2.32.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.8.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>com.dyuproject.protostuff</groupId>
+			<artifactId>protostuff-maven-plugin</artifactId>
+			<version>1.0.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.dyuproject.protostuff</groupId>
+			<artifactId>protostuff-json</artifactId>
+			<version>1.0.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.dyuproject.protostuff</groupId>
+			<artifactId>protostuff-api</artifactId>
+			<version>1.0.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.dyuproject.protostuff</groupId>
+			<artifactId>protostuff-runtime</artifactId>
+			<version>1.0.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.dyuproject.protostuff</groupId>
+			<artifactId>protostuff-collectionschema</artifactId>
+			<version>1.0.7</version>
+		</dependency>
+		<!-- To get the javadocs of a test method -->
+		<dependency>
+			<groupId>com.thoughtworks.qdox</groupId>
+			<artifactId>qdox</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>
+				com.springsource.org.apache.commons.io
+			</artifactId>
+			<version>1.4.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.dyuproject.protostuff</groupId>
+			<artifactId>protostuff-collectionschema</artifactId>
+			<version>1.0.7</version>
+		</dependency>
+		<!-- To get the javadocs of a test method -->
+		<dependency>
+			<groupId>com.thoughtworks.qdox</groupId>
+			<artifactId>qdox</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>12.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ebay.maui</groupId>
+			<artifactId>mauicomponent</artifactId>
+			<version>1.1.0-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>mauiplatform</artifactId>
+					<groupId>com.ebay.maui</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.github.stephenc.mongodb</groupId>
+			<artifactId>mongodb-maven-plugin</artifactId>
+			<version>2.2.1-1</version>
+			<!-- <exclusions>
+				<exclusion>
+					<artifactId>slf4j-api</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>slf4j-jdk14</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>slf4j-nop</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+			</exclusions> -->
+		</dependency>
+		<dependency>
+			<groupId>com.ebay.soa.lib</groupId>
+			<artifactId>SOAServiceCommon</artifactId>
+			<version>1.0.8.450</version>
+			<!-- <exclusions>
+				<exclusion>
+					<artifactId>slf4j-api</artifactId>
+					<groupId>com.ebay.external.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>slf4j-jdk14</artifactId>
+					<groupId>com.ebay.external.slf4j</groupId>
+				</exclusion>
+			</exclusions> -->
+		</dependency>
+	</dependencies>
+
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<encoding>utf-8</encoding>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>${testNGFileName}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+	</build>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.1.2</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>project-team</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>2.0.1</version>
+			</plugin>
+		</plugins>
+	</reporting>
+
+</project>

@@ -1,0 +1,77 @@
+In Before invokation : 
+  Method : TestPlan.beforeTestSuite(org.testng.ITestContext)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0]org.testng.TestRunner@736b736b  569385456
+	TestResult : [TestResult name=beforeTestSuite status=SUCCESS method=TestPlan.beforeTestSuite(org.testng.ITestContext)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In afterInvocation : 
+	Method : TestPlan.beforeTestSuite(org.testng.ITestContext)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0]org.testng.TestRunner@736b736b  569385456
+	TestResult : [TestResult name=beforeTestSuite status=SUCCESS method=TestPlan.beforeTestSuite(org.testng.ITestContext)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In onStart : 
+	Context : org.testng.TestRunner@736b736b
+
+In Before invokation : 
+	Method : TestPlan.beforeTest(org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0]org.testng.TestRunner@736b736b [Test: "eCAFTests" verbose:1[parameters:][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan]  packages:]   569385456
+	TestResult : [TestResult name=beforeTest status=SUCCESS method=TestPlan.beforeTest(org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In afterInvocation : 
+	Method : TestPlan.beforeTest(org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0]org.testng.TestRunner@736b736b [Test: "eCAFTests" verbose:1[parameters:][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan]  packages:]   569385456
+	TestResult : [TestResult name=beforeTest status=SUCCESS method=TestPlan.beforeTest(org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In Before invokation : 
+	Method : AddressLayerTestPlan.readTestData()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] 569385456
+	TestResult : [TestResult name=readTestData status=SUCCESS method=AddressLayerTestPlan.readTestData()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In afterInvocation : 
+	Method : AddressLayerTestPlan.readTestData()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] 569385456
+	TestResult : [TestResult name=readTestData status=SUCCESS method=AddressLayerTestPlan.readTestData()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In Before invokation : 
+	Method : TestPlan.beforeTestMethod([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0][Ljava.lang.Object;@25f625f6 public void com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan.addNewAddress() throws java.lang.Exception org.testng.TestRunner@736b736b [Test: "eCAFTests" verbose:1[parameters:][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan]  packages:]   569385456
+	TestResult : [TestResult name=beforeTestMethod status=SUCCESS method=TestPlan.beforeTestMethod([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In afterInvocation : 
+	Method : TestPlan.beforeTestMethod([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0][Ljava.lang.Object;@25f625f6 public void com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan.addNewAddress() throws java.lang.Exception org.testng.TestRunner@736b736b [Test: "eCAFTests" verbose:1[parameters:][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan]  packages:]   569385456
+	TestResult : [TestResult name=beforeTestMethod status=SUCCESS method=TestPlan.beforeTestMethod([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output=@@lt@@li^^gt^^ Step: Setting Attribute testMethodSignature={com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan.addNewAddress()}@@lt@@/li^^gt^^]
+
+In onTestStart : 
+	Result : [TestResult name=addNewAddress status=STARTED method=AddressLayerTestPlan.addNewAddress()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In Before invokation : 
+	Method : AddressLayerTestPlan.addNewAddress()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] 569385456
+	TestResult : [TestResult name=addNewAddress status=STARTED method=AddressLayerTestPlan.addNewAddress()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In afterInvocation : 
+	Method : AddressLayerTestPlan.addNewAddress()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] 569385456
+	TestResult : [TestResult name=addNewAddress status=FAILURE method=AddressLayerTestPlan.addNewAddress()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output=@@lt@@li^^gt^^DBCall: Host=StagingDB.UserLookupReadHostPhysical, Query={select HOST_ID01 from USER_HOST_ID_LOOKUP where USER_ID =1191106664}, values={}, @@lt@@a href='CoreCheckoutTests/htmls/5ecedb65a7a638ee277e9e320b24e4b8.html' target=dbquery^^gt^^1 row(s)@@lt@@/a^^gt^^ returned.@@lt@@/li^^gt^^]
+
+In onTestFailure : 
+	Result : [TestResult name=addNewAddress status=FAILURE method=AddressLayerTestPlan.addNewAddress()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output=@@lt@@li^^gt^^DBCall: Host=StagingDB.UserLookupReadHostPhysical, Query={select HOST_ID01 from USER_HOST_ID_LOOKUP where USER_ID =1191106664}, values={}, @@lt@@a href='CoreCheckoutTests/htmls/5ecedb65a7a638ee277e9e320b24e4b8.html' target=dbquery^^gt^^1 row(s)@@lt@@/a^^gt^^ returned.@@lt@@/li^^gt^^]
+
+In Before invokation : 
+	Method : TestPlan.afterTestMethod([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0][Ljava.lang.Object;@25f625f6 public void com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan.addNewAddress() throws java.lang.Exception org.testng.TestRunner@736b736b [Test: "eCAFTests" verbose:1[parameters:][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan]  packages:]   569385456
+	TestResult : [TestResult name=afterTestMethod status=SUCCESS method=TestPlan.afterTestMethod([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In afterInvocation : 
+	Method : TestPlan.afterTestMethod([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0][Ljava.lang.Object;@25f625f6 public void com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan.addNewAddress() throws java.lang.Exception org.testng.TestRunner@736b736b [Test: "eCAFTests" verbose:1[parameters:][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan]  packages:]   569385456
+	TestResult : [TestResult name=afterTestMethod status=SUCCESS method=TestPlan.afterTestMethod([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In onFinish : 
+	Context : org.testng.TestRunner@736b736b
+
+In Before invokation : 
+	Method : TestPlan.afterTestSuite()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] 569385456
+	TestResult : [TestResult name=afterTestSuite status=SUCCESS method=TestPlan.afterTestSuite()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+In afterInvocation : 
+	Method : TestPlan.afterTestSuite()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] 569385456
+	TestResult : [TestResult name=afterTestSuite status=SUCCESS method=TestPlan.afterTestSuite()[pri:0, instance:com.ebay.qe.checkout.test.sbc.AddressLayerTestPlan@21f021f0] output={null}]
+
+===============================================
+CoreCheckoutTests
+Total tests run: 1, Failures: 1, Skips: 0
+===============================================
+
+In generateReport : 
+IXML Suite : null
+IXML Suite : CoreCheckoutTests
+Output Directory : S:\Git-Repos\MAUI_CheckoutAll\CoreCheckout-tests\test-output

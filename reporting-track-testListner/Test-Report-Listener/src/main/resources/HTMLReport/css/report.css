@@ -1,0 +1,24 @@
+.contact-item-object{
+	margin:2px;
+	border:1px solid #fff;
+	height:52px;
+	width:52px;
+}
+
+.rightsidebar-nav{
+	position:fixed; 
+}
+
+
+/*This property is to over write the defult lightbox style*/
+.lightbox{
+	display: none;
+}
+
+#reqResHeader,#screenShotListHeader,#stackTraceHeader,#debugHelperHeader,#testLogHeader{
+	display: : none;
+}
+
+#stackTraceContainer{
+	word-wrap:normal;
+}
